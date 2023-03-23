@@ -49,41 +49,49 @@ function getLosAngeles(){
     window.location = ('https://www.meteo.it/meteo/los-angeles-2002180');
 }
 
-
+var statC = true;
 function showC(){
-    for (let index = 0; index < document.getElementsByClassName("temperatureCelsius").length; index++){
-        document.getElementsByClassName("temperatureCelsius")[index].style.visibility = "visible";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureFarenhait").length; index++) {
-        document.getElementsByClassName("temperatureFarenhait")[index].style.visibility = "hidden";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++) {
-        document.getElementsByClassName("temperatureKelvin")[index].style.visibility = "hidden";
-    }
+    if(statC){
+        for (let index = 0; index < document.getElementsByClassName("temperatureCelsius").length; index++){
+            document.getElementsByClassName("temperatureCelsius")[index].style.visibility = "visible";
+        }
+        statC = false;
+    }else{
+        for (let index = 0; index < document.getElementsByClassName("temperatureCelsius").length; index++){
+            document.getElementsByClassName("temperatureCelsius")[index].style.visibility = "hidden";
+        }
+        statC = true;
+    } 
 }
 
-function showF(){
-    for (let index = 0; index < document.getElementsByClassName("temperatureFarenhait").length; index++) {
-        document.getElementsByClassName("temperatureFarenhait")[index].style.visibility = "visible";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureCelsius").length; index++){
-        document.getElementsByClassName("temperatureCelsius")[index].style.visibility = "hidden";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++) {
-        document.getElementsByClassName("temperatureKelvin")[index].style.visibility = "hidden";
-    }
-}
-
+var statK = true;
 function showK(){
-    for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++) {
-        document.getElementsByClassName("temperatureKelvin")[index].style.visibility = "visible";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureFarenhait").length; index++) {
-        document.getElementsByClassName("temperatureFarenhait")[index].style.visibility = "hidden";
-    }
-    for (let index = 0; index < document.getElementsByClassName("temperatureCelsius").length; index++){
-        document.getElementsByClassName("temperatureCelsius")[index].style.visibility = "hidden";
-    }
+    if(statK){
+        for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++){
+            document.getElementsByClassName("temperatureKelvin")[index].style.visibility = "visible";
+        }
+        statK = false;
+    }else{
+        for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++){
+            document.getElementsByClassName("temperatureKelvin")[index].style.visibility = "hidden";
+        }
+        statK = true;
+    } 
+}
+
+var statF = true;
+function showF(){
+    if(statF){
+        for (let index = 0; index < document.getElementsByClassName("temperatureFarenhait").length; index++){
+            document.getElementsByClassName("temperatureFarenhait")[index].style.visibility = "visible";
+        }
+        statF = false;
+    }else{
+        for (let index = 0; index < document.getElementsByClassName("temperatureFarenhait").length; index++){
+            document.getElementsByClassName("temperatureFarenhait")[index].style.visibility = "hidden";
+        }
+        statF = true;
+    } 
 }
 
 for (let index = 0; index < document.getElementsByClassName("temperatureKelvin").length; index++) {
