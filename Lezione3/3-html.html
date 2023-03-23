@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="stylesheet" href="./3-css.css" />
+        <script src="3-js.js" type="text/javascript" defer></script>
+        <title>Temperature in alcune località</title>
+    </head>
+    <body>
+        <h1>Temperature in alcune località del mondo</h1>
+        
+        <p>Filtro: </p>
+        <input type="radio" id="K" name="age" value="K" onclick="showK()">
+        <label for="age3">K</label><br>
+        <input type="radio" id="F" name="age" value="F" onclick="showF()">
+        <label for="age2">F</label><br>  
+        <input type="radio" id="C" name="age" value="C" onclick="showC()">
+        <label for="age1">C</label><br><br>
+        
+
+        <section class="temperatureWrapper">
+            <div
+                id="temperatureItaly"
+                class="temperatureContry"
+            >
+                <p onclick="getMilano()"><b>Milano</b> Italia</p>
+                <span class="temperatureKelvin"></span>
+                <span class="temperatureCelsius"></span>
+                <span class="temperatureFarenhait"></span>
+            </div>
+            <div
+                id="temperatureThailand"
+                class="temperatureContry"
+            >
+                <p onclick="getBangkok()"><b>Bangkok</b> Thailandia</p>
+                <span class="temperatureKelvin"></span>
+                <span class="temperatureCelsius"></span>
+                <span class="temperatureFarenhait"></span>
+            </div>
+            <div
+                id="temperatureUsa"
+                class="temperatureContry"
+            >
+                <p onclick="getLosAngeles()"><b>Los Angeles</b> USA</p>
+                <span class="temperatureKelvin"></span>
+                <span class="temperatureCelsius"></span>
+                <span class="temperatureFarenhait"></span>
+            </div>
+        </section>
+    </body>
+</html>
