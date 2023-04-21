@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script src="js.js" defer></script>
+
+    <form onsubmit="insertRicetta(event)">
+    <p>Inserisci titolo: <input type="text" name="titolo" id="titolo"></p>
+    <p>Inserisci porzioni: <input type="number" name="porzioni" id="porzioni"></p>
+    <p>Inserisci ingredienti (es: "pasta;salsa;tonno"): <input type="text" name="ingredienti" id="ingredienti"></p>
+    <button>Inserisci ricetta!</button>
+    </form>
+
+    <p id = "result"></p>
+
+    <br><br>
+
+    <form onsubmit="insertLibro(event)">
+        <p>Inserisci titolo: <input type="text" name="titoloL" id="titoloL"></p>
+        <p>Inserisci Autore: <input type="text" name="autoreL" id="autoreL"></p>
+        <input type="checkbox" id="read" name="read" value="read">
+        <label for=> Ho letto il libro</label><br><br>
+        <button>Inserisci libro!</button>
+        <p id = "resultL"></p>
+    </form>
+        
+    <form onsubmit="getAllLibri(event)">
+        <button>Visualizza tutt i libri!</button>
+        <p id = "allLibri"></p>
+    </form>
+</head>
+<body>
+</body>
+</html>
