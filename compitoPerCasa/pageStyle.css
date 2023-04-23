@@ -1,0 +1,100 @@
+body{
+    font-family: 'Carlito';
+    margin: 0; 
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 5%;
+    font-size: 103%;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+header .logo p{
+    margin-left: 1em;
+}
+
+header .logo .logoimg{
+    height: 11%;
+    width: 11%;
+}
+
+header .button{
+    display: flex;
+    align-items: center;
+    margin-left: 52%;
+    height: 40%;
+}
+
+header .button #button1{
+    border-radius: 10px;
+    font-size: 90%;
+    font-family: 'Carlito';
+    width: 200px;
+    height: 110%;
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    margin-right: 2%;
+}
+header .button #button2{
+    border-radius: 10px;
+    font-size: 90%;
+    font-family: 'Carlito';
+    width: 60%;
+    height: 110%;
+    color: white;
+    background-color: #4C5FD5;
+    border: none;
+}
+
+nav{
+    font-size: 300%;
+    text-align: center;
+    align-items : center;
+    background-color: #c8c8c8;
+    padding: 0.4%;
+}
+
+  
+input[type="search"] {
+    width: 85%;
+    vertical-align: middle;
+    border: none;
+    background: transparent;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+  
+button[type="submit"] {
+    vertical-align: middle;
+    text-indent: -999px;
+    overflow: hidden;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' class='bi bi-search' viewBox='0 1 24 24'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+nav .searchContainer{
+    border: solid black 1px;
+    width: 25%;
+    height: 6.2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
