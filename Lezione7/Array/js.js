@@ -81,4 +81,5 @@ function getAverageAge(arr){
         somma += arr[i].age;
     }
     return somma / arr.length;
+    
 }
